@@ -40,4 +40,3 @@ if(NOT TARGET test)
 endif()
 
 add_subdirectory(Sample)
-add_subdirectory(CUDASample)

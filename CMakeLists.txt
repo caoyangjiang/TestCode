@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.7)
 set(CMAKE_DISABLE_SOURCE_CHANGES ON)
 set(CMAKE_DISABLE_IN_SOURCE_BUILD ON)
 
-project(hvr-sample)
+project(TestCode)
 
 if(MSVC)
   set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
@@ -131,7 +131,7 @@ add_subdirectory(modules)
 add_subdirectory(apps)
 add_subdirectory(doc)
 
-option(UNIT_TEST "Run unit tests" ON)
+option(UNIT_TEST "Run unit tests" OFF)
 
 if(UNIT_TEST)
   add_subdirectory(unit-test)

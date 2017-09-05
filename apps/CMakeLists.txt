@@ -1,5 +1,4 @@
 cmake_minimum_required(VERSION 3.7)
 project(apps)
 
-add_subdirectory(CUDASampleExample)
-add_subdirectory(SampleExample)
+add_subdirectory(SSE)
