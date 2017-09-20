@@ -3,3 +3,7 @@ project(apps)
 
 add_subdirectory(SSE)
 add_subdirectory(SQL)
+add_subdirectory(Boost.Asio)
+add_subdirectory(Boost.DeadlineTimer)
+add_subdirectory(Daemonize)
+add_subdirectory(Serialization)

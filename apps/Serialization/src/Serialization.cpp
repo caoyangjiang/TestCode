@@ -294,6 +294,7 @@ struct Mode : public Serializable
     }
   };
 
+  std::string str        = "my name is serializable";
   int width              = 2048;
   int height             = 1024;
   int mode               = 0;
@@ -313,6 +314,7 @@ struct Mode : public Serializable
   {
     if (!using_default)
     {
+      str        = "";
       width      = 0;
       height     = 0;
       mode       = 0;
@@ -329,6 +331,7 @@ struct Mode : public Serializable
 
   void Add_Values() override
   {
+    Add("str", str);
     Add("width", width);
     Add("height", height);
     Add("mode", mode);
@@ -341,6 +344,7 @@ struct Mode : public Serializable
 
   void Get_Values() override
   {
+    Get("str", str);
     Get("width", width);
     Get("height", height);
     Get("mode", mode);
@@ -353,6 +357,7 @@ struct Mode : public Serializable
 
   void Print()
   {
+    std::cout << "str: " << str << std::endl;
     std::cout << "width: " << width << std::endl;
     std::cout << "height: " << height << std::endl;
     std::cout << "mode: " << mode << std::endl;
