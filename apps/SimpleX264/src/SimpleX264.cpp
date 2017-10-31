@@ -1,6 +1,5 @@
 // Copyright @ 2016 Caoyang Jiang
 
-JCY_WINDOWS_DISABLE_ALL_WARNING
 #include <stdint.h>
 #include <x264.h>
 #include <cstring>
@@ -8,7 +7,6 @@ JCY_WINDOWS_DISABLE_ALL_WARNING
 #include <iostream>
 #include <memory>
 #include <vector>
-JCY_WINDOWS_ENABLE_ALL_WARNING
 
 class VideoEncoder
 {
@@ -143,7 +141,6 @@ class VideoEncoder
   x264_t* encoder_;
   x264_picture_t picin_;
   x264_picture_t picout_;
-  x264_picture_t picout;
   x264_nal_t* nal_;
   std::vector<uint8_t> bs_;
 };
