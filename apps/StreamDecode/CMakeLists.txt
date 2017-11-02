@@ -13,7 +13,9 @@ if(APPLE)
   set(ENV{PKG_CONFIG_PATH}  "/usr/local/opt/ffmpeg/lib/pkgconfig")
 endif()
 
-pkg_check_modules( FFMPEG REQUIRED libavcodec libavcodec libavformat)
+pkg_check_modules(FFMPEG REQUIRED libavcodec
+                                  libavcodec
+                                  libavformat)
 
 add_executable(${PROJECT_NAME} ${PROJECT_SRCS})
 
